@@ -5,7 +5,7 @@ import { db } from '../firebase_alimentos/init-firebase'
 export const AlimentosPerecederos = () => {
 
     const [name, setName] = useState('')
-    const [price, setPrice] = useState(0)
+    const [price, setPrice] = useState()
     const [date, setDate] = useState('')
 
     const handleSubmit = (e) => {
@@ -55,7 +55,7 @@ export const AlimentosPerecederos = () => {
                         type="value" 
                         id="precio" 
                         name="precio"
-                        placeholder="PRECIO" 
+                        placeholder="Precio del producto" 
                         value={ price }
                         onChange={(e) => setPrice(e.target.value)}
                         /* onChange={handleInputChange} value={inputs.precio} */>
