@@ -1,6 +1,9 @@
+import { useEffect, useState } from "react";
 import { NotificationType } from "./NotificationType";
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from "../firebase_alimentos/init-firebase";
 
-const products_day = [
+/* const products_day = [
     {
         id: 1,
         name: 'Arroz',
@@ -11,7 +14,7 @@ const products_day = [
         name: 'Arroz',
         amount: '1000', // Se mide en gramos
     }
-];
+]; */
 
 const products_perishable = [
     {
@@ -23,6 +26,29 @@ const products_perishable = [
 ];
 
 export const NotificationList = ({ genType }) => {
+
+    const [products_day, setproducts_day] = useState([])
+
+    useEffect(() => {
+        getproducts_day()
+    }, [])
+
+    useEffect(() => {
+        console.log(products_day)
+    }, [products_day])
+
+    function getproducts_day() {
+        const products_dayCollectionRef = collection(db, 'alimentosdeldia')
+        getDocs(products_dayCollectionRef)
+        .then(response => {
+             const productsday = response.docs.map((doc) => ({
+                data: doc.data(),
+                id: doc.id
+            }))
+            setproducts_day(productsday)
+        })
+        .catch(error => console.log(error.message))
+    }
 
     const buyProduct = (id) => {
         console.log('Se compra el producto', id)
