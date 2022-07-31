@@ -11,8 +11,6 @@ export const Header = () => {
                <PerfilButton img={ Perfil_boton } />
                <MenuButton img={ Menu_boton } />
             </nav>
-            <h1>Header test</h1>    
-            <PerfilButton img={ Perfil_boton } />     
         </div>
     )
 }
