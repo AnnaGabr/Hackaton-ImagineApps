@@ -30,28 +30,37 @@ nav .btnMenu {
 }
 
 .alimentos-dia {
-  width: 40%;
-  height: 14vh;
-  background-color: #ffffff95;
-  margin: auto;
-  margin-top: 3%;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
+  border: 2px solid black;
+  width: 25em;
+  height: 10em;
+  text-align: center;
+  margin-bottom: 3em;
+  display: grid;
   align-items: center;
+  background-color: rgba(247, 201, 72, 1);
 }
 
+
 .alimentos-perecederos {
-  width: 40%;
-  height: 14vh;
-  background-color: #ffffff95;
-  margin: auto;
-  margin-top: 3%;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 2px solid black;
+  width: 25em;
+  height: 10em;
+  text-align: center;
+  display: grid;
+  align-items: center; 
+  margin-bottom: 3em;
+  background-color: rgba(15, 96, 155, 1); 
 }
+
+.alimentos-dia, h3{
+  color: rgba(15, 96, 155, 1); 
+  font-size: 1em;
+}
+
+.alimentos-perecederos, h3{
+ color: rgba(247, 201, 72, 1); 
+}
+
 
 .boton-agregar {
   align-items: center;
@@ -64,4 +73,11 @@ nav .btnMenu {
   font-family: arial;
   justify-content: space-between;
   box-shadow: 2px 8px 8px rgb(0 0 0 / 59%);
+}
+
+.principalForm{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+  margin: 2em; 
 }
