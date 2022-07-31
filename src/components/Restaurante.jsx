@@ -7,23 +7,23 @@ export const Restaurante = ({ alimentos }) => {
 
 
   return (
-    <div>
-      <form>
+    <div >
+      <form className='alimentos-dia'>
         ALIMENTOS DEL DÍA
         ¡Recuerda!, aquí debes agregar los alimentos que preparaste hoy y no alcanzaste a vender.
         ¡Entre todos nos ayudamos!
-        <button>
+        <button className='boton-agregar'>
           +
         </button>
       </form>
       <AlimentosDia />
       
-      <form>
+      <form className='alimentos-perecederos'>
         ALIMENTOS PERECEDEROS
         ¡Recuerda!, aquí puedes agregar cualquier alimento que tenga una fecha de vencimiento pronta pero que no haya sido abierto, 
         así podrás ofrecerlo a un buen precio.
         ¡Entre todos nos ayudamos!
-        <button>
+        <button className='boton-agregar'>
           +
         </button>
       </form>
