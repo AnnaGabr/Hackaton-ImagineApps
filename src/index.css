@@ -112,4 +112,5 @@ nav .btnMenu {
   color: #8D2B0B;
   font-weight: bolder;
   border: none;
+  cursor: pointer;
 }

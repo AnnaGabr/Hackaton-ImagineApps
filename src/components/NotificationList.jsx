@@ -1,8 +1,13 @@
-import { Notification } from "./Notification";
+import { NotificationType } from "./NotificationType";
 
 const products_day = [
     {
         id: 1,
+        name: 'Arroz',
+        amount: '1000', // Se mide en gramos
+    },
+    {
+        id: 2,
         name: 'Arroz',
         amount: '1000', // Se mide en gramos
     }
@@ -27,14 +32,13 @@ export const NotificationList = ({ genType }) => {
         console.log('Se reserva el producto', id)
     }
 
-    const toggleDayProducts = (id) => {
-        console.log('Este es un alimento del día')
+    const clickDayProduct = () => {
+        genType = true
+        console.log('genType', genType)
     }
 
-    
-
-    const clickDayProduct = () => {
-        genType = 1
+    const clickPerishable = () => {
+        genType = false
         console.log('genType', genType)
     }
     
@@ -49,14 +53,23 @@ export const NotificationList = ({ genType }) => {
                     >
                         ALIMENTOS DEL DÍA
                     </button>
-                    <button className="btnProductType">ALIMENTOS PERECEDEROS</button>
+                    <button
+                    className="btnProductType"
+                    onClick={ clickPerishable }
+                    >ALIMENTOS PERECEDEROS</button>
                 </div>
-                { products_day.map((product) => (
-                    <Notification key={ product.id } product={ product } type={ 1 } onClick={ reserveProduct } />
-                )) }
-                { products_perishable.map((product) => (
-                    <Notification key={ product.id } product={ product } type={ 0 } onClick={ buyProduct } />
-                )) }
+                { genType ?
+                    <NotificationType productArray={ products_day } type={ 1 } onClick={ reserveProduct } genType={ genType } />
+                    :
+                    <NotificationType productArray={ products_perishable } type={ 0 } onClick={ buyProduct } genType={ genType } />
+
+                    /*{ products_day.map((product) => (
+                        <Notification key={ product.id } product={ product } type={ 1 } onClick={ reserveProduct } />
+                    )) } :
+                    { products_perishable.map((product) => (
+                        <Notification key={ product.id } product={ product } type={ 0 } onClick={ buyProduct } />
+                    )) }*/
+                }
             </div>
         </div>
     )

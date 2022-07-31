@@ -2,16 +2,16 @@ import { Header } from "./components/Header";
 import { NotificationList } from "./components/NotificationList";
 
 
-function App() {
+function AppFundaciones() {
 
-  let genType = 0
-  
+  let genType = true
+
   return (
     <div className="App">
       <Header />
-      <NotificationList genType={ genType }/>
+      <NotificationList genType={ genType } />
     </div>
   );
 }
 
-export default App;
+export default AppFundaciones;
