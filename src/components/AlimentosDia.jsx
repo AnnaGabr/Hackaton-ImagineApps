@@ -33,7 +33,6 @@ export const AlimentosDia = () => {
                         id="nombre-plato"
                         name="plato"
                         placeholder="Ingresa el nombre del alimento"
-                        className="form-control"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         /* onChange={handleInputChange} value={inputs.plato} */>
