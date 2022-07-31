@@ -28,3 +28,86 @@ nav .btnMenu {
   border: none;
   cursor: pointer;
 }
+
+.notifContainer {
+  max-width: 1157px;
+  margin: 30px auto;
+  margin-top: 50px;
+  overflow: auto;
+  min-height: 500px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.product {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+.product h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  color: #1D3A58;
+  font-size: 50px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notifContainer .productType {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notifContainer .productType .btnProductType {
+  color: #627D98;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.notifContainer .productType .btnProductType:active{
+  color: white;
+  background-color: #F7C948;
+}
+
+.product h3 {
+  color: #F7C948;
+}
+
+.product .btnProduct {
+  background-color: #F7C948;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  color: #8D2B0B;
+  font-weight: bolder;
+  border: none;
+}
