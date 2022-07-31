@@ -10,7 +10,7 @@ body {
 
 nav {
   display: flex;
-  background-color: #8D2B0B;
+  background-color: #8d2b0b;
   height: 116px;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -18,14 +18,14 @@ nav {
 
 nav .btnPerfil {
   margin-left: 40px;
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   border: none;
   cursor: pointer;
 }
 
 nav .btnMenu {
   margin-right: 41px;
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   border: none;
   cursor: pointer;
 }
@@ -60,7 +60,6 @@ nav .btnMenu {
 }
 
 .alimentos-dia {
-  
   width: 30em;
   height: 10em;
   text-align: center;
@@ -68,7 +67,7 @@ nav .btnMenu {
   display: grid;
   align-items: center;
   background-color: rgba(247, 201, 72, 1);
-  padding: 1em; 
+  padding: 1em;
   border-radius: 7px;
 }
 
@@ -78,8 +77,8 @@ nav .btnMenu {
   align-items: center;
 }
 
-.title{
-  color: #1D3A58;
+.title {
+  color: #1d3a58;
   font-size: 50px;
   font-weight: bolder;
   display: flex;
@@ -87,43 +86,43 @@ nav .btnMenu {
 }
 
 .alimentos-perecederos {
-  
   width: 30em;
   height: 10.5em;
   text-align: center;
   display: grid;
-  align-items: center; 
+  align-items: center;
   margin-bottom: 3em;
-  background-color: rgba(15, 96, 155, 1); 
+  background-color: rgba(15, 96, 155, 1);
   padding: 1em;
   border-radius: 7px;
 }
 
-.alimentos-dia, h4{
-  color: rgba(141, 43, 11, 1); 
+.alimentos-dia,
+h4 {
+  color: rgba(141, 43, 11, 1);
   font-size: 1em;
   font-weight: bolder;
 }
 
-.alimentos-perecederos, h3{
- color: rgba(247, 201, 72, 1); 
- font-size: 1em;
- font-weight: bold;
+.alimentos-perecederos,
+h3 {
+  color: rgba(247, 201, 72, 1);
+  font-size: 1em;
+  font-weight: bold;
 }
-
 
 .boton-agregar {
   align-items: center;
 }
 
 .notifContainer .productType {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .notifContainer .productType .btnProductType {
-  color: #627D98;
+  color: #627d98;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   padding: 20px;
@@ -135,23 +134,23 @@ nav .btnMenu {
   border-radius: 10px;
 }
 
-.notifContainer .productType .btnProductType:active{
+.notifContainer .productType .btnProductType:active {
   color: white;
-  background-color: #F7C948;
+  background-color: #f7c948;
 }
 
 .product h3 {
-  color: #F7C948;
+  color: #f7c948;
 }
 
 .product .btnProduct {
-  background-color: #F7C948;
+  background-color: #f7c948;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 10px;
-  color: #8D2B0B;
+  color: #8d2b0b;
   font-weight: bolder;
   border: none;
   cursor: pointer;
@@ -167,41 +166,41 @@ nav .btnMenu {
   font-weight: bolder;
 }
 
-#principalForm{
+#principalForm {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   gap: 3em;
-  margin: 2em; 
-  margin: 1em; 
+  margin: 2em;
+  margin: 1em;
 }
 
-.inputs{
+.inputs {
   width: 20em;
-  margin: 0.5em; 
-  border: 1px solid rgb(74, 154, 210); 
+  margin: 0.5em;
+  border: 1px solid rgb(74, 154, 210);
   border-radius: 7px;
-  background: rgb(220, 233, 236); 
+  background: rgb(220, 233, 236);
   padding-left: 1em;
   justify-items: center;
 }
 
-#boton-plato{
+#boton-plato {
   background: rgba(247, 201, 72, 1);
   border-radius: 7px;
   margin-top: 1em;
-  border: none; 
-  color: #8D2B0B;
+  border: none;
+  color: #8d2b0b;
   width: 15em;
   margin-left: 0.5em;
   font-weight: bolder;
 }
 
-#boton-producto{
+#boton-producto {
   background: rgba(15, 96, 155, 1);
   border-radius: 7px;
   margin-top: 1em;
-  border: none; 
+  border: none;
   color: rgba(247, 201, 72, 1);
   width: 15em;
   margin-left: 0.5em;
@@ -209,11 +208,12 @@ nav .btnMenu {
   margin-bottom: 1em;
 }
 
-.cardDay, .cardPerecederos{
- /* border: ;  */
- border-radius: 7px;
- box-shadow: 2px 8px 8px rgb(0 0 0 / 59%);
- background: rgba(255, 255, 255, 0.864);
+.cardDay,
+.cardPerecederos {
+  /* border: ;  */
+  border-radius: 7px;
+  box-shadow: 2px 8px 8px rgb(0 0 0 / 59%);
+  background: rgba(255, 255, 255, 0.864);
 }
 
 /* .cardPerecederos{
@@ -221,3 +221,66 @@ nav .btnMenu {
   box-shadow: 2px 8px 8px rgb(0 0 0 / 59%);
   background: rgba(255, 255, 255, 0.864);
 } */
+
+.contenedorAuth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.formContainer {
+  display: flex;
+  width: 630px;
+  /* height: 630px; */
+  background-color: #ffffff70;
+  -webkit-box-shadow: 0px 9px 19px 0px rgb(0 0 0 / 75%);
+  -moz-box-shadow: 0px 9px 19px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 19px 0px rgb(0 0 0 / 75%);
+
+  padding: 40px;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px;
+  gap: 20px;
+}
+
+.formContainer form input,
+.formContainer form select {
+  height: 45px;
+  border-radius: 10px;
+  border: 2px solid #9e9fa0;
+  outline: none;
+  background-color: #f0f4f8;
+  color: #627d98;
+  padding: 0px 10px;
+}
+
+.formContainer form input:focus,
+.formContainer form select:focus {
+  border: 3px solid #4098d7 !important;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+.titulosForm {
+  display: flex;
+  gap: 20px;
+  border-bottom: 3px solid #bdbdbd;
+}
+
+.titulosForm .navActiva {
+  border-bottom: 3px solid #4098d7;
+}
+
+.logo {
+  height: auto;
+  width: 250px;
+}

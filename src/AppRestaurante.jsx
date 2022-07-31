@@ -1,15 +1,23 @@
-import React, { useState } from "react";
-import { Restaurante } from './components/Restaurante';
-import { Header } from "./components/Header";
+import React, { useState } from 'react';
+import firebaseAppData from './firebase/firebase-config';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { Auth } from './components/Auth';
+import AppFundaciones from './AppFundaciones';
+
+const auth = getAuth(firebaseAppData);
 
 export function AppRestaurante() {
-    const [alimentos, setAlimentos] = useState([]);
+  const [alimentos, setAlimentos] = useState([]);
 
-    return(
-        <div>
-            <Header />
-            <Restaurante alimentos={alimentos}/>
-        </div>
-        
-    )
+  const [user, setUser] = useState(null);
+
+  onAuthStateChanged(auth, (userFirebase) => {
+    if (userFirebase) {
+      setUser(userFirebase);
+    } else {
+      setUser(null);
+    }
+  });
+
+  return <>{user ? <AppFundaciones /> : <Auth />}</>;
 }
