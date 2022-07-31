@@ -10,7 +10,7 @@ export const Notification = ({ product, type, onClick }) => {
                 <p>
                     { type > 0 ? 'Cantidad disponible' : 'Vence el día' }
                     : &nbsp;
-                    { type > 0 ? product.data.amount : product.date }
+                    { type > 0 ? product.data.amount : product.data.date }
                 </p>
                 <button
                 className="btnProduct"

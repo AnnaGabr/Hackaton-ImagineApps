@@ -13,6 +13,7 @@ nav {
   background-color: #8D2B0B;
   height: 116px;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 nav .btnPerfil {

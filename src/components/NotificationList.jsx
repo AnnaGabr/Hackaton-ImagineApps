@@ -16,14 +16,14 @@ import { db } from "../firebase_alimentos/init-firebase";
     }
 ]; */
 
-const products_perishable = [
+/* const products_perishable = [
     {
         id: 1,
         name: 'Leche',
         date: '10/02/2023',
         price: 10000,
     }
-];
+]; */
 
 export const NotificationList = ({ genType }) => {
 
@@ -50,6 +50,29 @@ export const NotificationList = ({ genType }) => {
         .catch(error => console.log(error.message))
     }
 
+    const [products_perishable, setproducts_perishable] = useState([])
+
+    useEffect(() => {
+        getproducts_perishable()
+    }, [])
+
+    useEffect(() => {
+        console.log(products_perishable)
+    }, [products_perishable])
+
+    function getproducts_perishable() {
+        const products_perishableCollectionRef = collection(db, 'alimentosperecederos')
+        getDocs(products_perishableCollectionRef)
+        .then(response => {
+             const productsperishable = response.docs.map((doc) => ({
+                data: doc.data(),
+                id: doc.id
+            }))
+            setproducts_perishable(productsperishable)
+        })
+        .catch(error => console.log(error.message))
+    }
+
     const buyProduct = (id) => {
         console.log('Se compra el producto', id)
     }
@@ -60,11 +83,13 @@ export const NotificationList = ({ genType }) => {
 
     const clickDayProduct = () => {
         genType = true
+        getproducts_day()
         console.log('genType', genType)
     }
 
     const clickPerishable = () => {
         genType = false
+        getproducts_perishable()
         console.log('genType', genType)
     }
     
