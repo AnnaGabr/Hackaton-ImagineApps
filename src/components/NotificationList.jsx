@@ -17,7 +17,7 @@ const products_perishable = [
     }
 ];
 
-export const NotificationList = () => {
+export const NotificationList = ({ genType }) => {
 
     const buyProduct = (id) => {
         console.log('Se compra el producto', id)
@@ -31,10 +31,10 @@ export const NotificationList = () => {
         console.log('Este es un alimento del día')
     }
 
-    var genType
+    
 
     const clickDayProduct = () => {
-        this.genType = 1
+        genType = 1
         console.log('genType', genType)
     }
     
@@ -45,7 +45,7 @@ export const NotificationList = () => {
                 <div className="productType">
                     <button
                     className="btnProductType"
-                    onClick={clickDayProduct}
+                    onClick={ clickDayProduct }
                     >
                         ALIMENTOS DEL DÍA
                     </button>

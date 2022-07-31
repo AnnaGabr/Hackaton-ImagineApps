@@ -3,11 +3,13 @@ import { NotificationList } from "./components/NotificationList";
 
 
 function App() {
+
+  let genType = 0
   
   return (
     <div className="App">
       <Header />
-      <NotificationList />
+      <NotificationList genType={ genType }/>
     </div>
   );
 }
