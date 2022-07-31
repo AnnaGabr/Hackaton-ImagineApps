@@ -6,38 +6,47 @@ export const AlimentosPerecederos = () => {
         <div id="alimentosPerecederos">
             <form /* onSubmit={guardarDatos} */>
                 <div>
-                    <input 
+                    <input className= "inputs"
                         type="text" 
                         id="nombre-producto" 
                         name="producto"
-                        placeholder="NOMBRE DEL PRODUCTO" 
+                        placeholder="Ingresa el nombre del alimento" 
                         /* onChange={handleInputChange} value={inputs.producto} */>
                     </input>
                 </div>
     
                 <div>
-                    <input 
+                    <input className= "inputs"
                         type="date" 
                         id="fecha" 
                         name="fecha-producto"
-                        placeholder="FECHA PRODUCTO" 
+                        placeholder="Ingresa cantidad del alimento" 
                         /* onChange={handleInputChange} value={inputs.fecha} */>
                     </input>
                 </div>
-
                 <div>
-                    <input 
+                    <input className= "inputs"
                         type="value" 
-                        id="precio" 
-                        name="precio"
-                        placeholder="PRECIO" 
+                        id="fecha" 
+                        name="fecha"
+                        placeholder="Fecha de vencimiento" 
                         /* onChange={handleInputChange} value={inputs.precio} */>
                     </input>
                 </div>
 
                 <div>
-                    <button id="boton-producto" type="submit">
-                        AGREGAR
+                    <input className= "inputs"
+                        type="value" 
+                        id="precio" 
+                        name="precio"
+                        placeholder="Precio" 
+                        /* onChange={handleInputChange} value={inputs.precio} */>
+                    </input>
+                </div>
+
+                <div>
+                    <button id="boton-producto" type="submit" >
+                        AGREGAR ALIMENTO
                     </button>
                 </div>
             </form>

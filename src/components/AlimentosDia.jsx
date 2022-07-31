@@ -1,34 +1,34 @@
 import React from "react";
 
+
 export const AlimentosDia = () => {
 
     return (
         <div id="alimentosDia">
             <form /* onSubmit={guardarDatos} */>
                 <div>
-                    <input 
-                        type="text" 
-                        id="nombre-plato" 
+                    <input className="inputs"
+                        type="text"
+                        id="nombre-plato"
                         name="plato"
-                        placeholder="NOMBRE DEL PLATO"
-                        className="form-control"
+                        placeholder="Ingresa el nombre del alimento"
                         /* onChange={handleInputChange} value={inputs.plato} */>
                     </input>
+
                 </div>
-    
+
                 <div className="col-md-3">
-                    <input 
-                        type="text" 
-                        id="granaje" 
-                        name="granaje"
-                        placeholder="GRANAJE DEL PLATO"
-                        className="form-control"
+                    <input className="inputs"
+                        type="text"
+                        id="gramaje"
+                        name="gramaje"
+                        placeholder="Ingresa la cantidad del alimento"
                         /* onChange={handleInputChange} value={inputs.granaje} */>
                     </input>
                 </div>
                 <div className="col-md-3">
-                    <button id="boton-plato" type="submit">
-                        AGREGAR
+                    <button id="boton-plato" type="submit" >
+                        AGREGAR ALIMENTO
                     </button>
                 </div>
             </form>

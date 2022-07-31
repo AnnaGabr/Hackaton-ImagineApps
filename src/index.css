@@ -30,35 +30,42 @@ nav .btnMenu {
 }
 
 .alimentos-dia {
-  border: 2px solid black;
-  width: 25em;
+  
+  width: 30em;
   height: 10em;
   text-align: center;
   margin-bottom: 3em;
   display: grid;
   align-items: center;
   background-color: rgba(247, 201, 72, 1);
+  padding: 1em; 
+  border-radius: 7px;
 }
 
 
 .alimentos-perecederos {
-  border: 2px solid black;
-  width: 25em;
-  height: 10em;
+  
+  width: 30em;
+  height: 10.5em;
   text-align: center;
   display: grid;
   align-items: center; 
   margin-bottom: 3em;
   background-color: rgba(15, 96, 155, 1); 
+  padding: 1em;
+  border-radius: 7px;
 }
 
-.alimentos-dia, h3{
-  color: rgba(15, 96, 155, 1); 
+.alimentos-dia, h4{
+  color: rgba(141, 43, 11, 1); 
   font-size: 1em;
+  font-weight: bolder;
 }
 
 .alimentos-perecederos, h3{
  color: rgba(247, 201, 72, 1); 
+ font-size: 1em;
+ font-weight: bold;
 }
 
 
@@ -73,11 +80,60 @@ nav .btnMenu {
   font-family: arial;
   justify-content: space-between;
   box-shadow: 2px 8px 8px rgb(0 0 0 / 59%);
+  font-weight: bolder;
 }
 
-.principalForm{
+#principalForm{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   gap: 3em;
   margin: 2em; 
+  margin: 1em; 
 }
+
+.inputs{
+  width: 20em;
+  margin: 0.5em; 
+  border: 1px solid rgb(74, 154, 210); 
+  border-radius: 7px;
+  background: rgb(220, 233, 236); 
+  padding-left: 1em;
+  justify-items: center;
+}
+
+#boton-plato{
+  background: rgba(247, 201, 72, 1);
+  border-radius: 7px;
+  margin-top: 1em;
+  border: none; 
+  color: #8D2B0B;
+  width: 15em;
+  margin-left: 0.5em;
+  font-weight: bolder;
+}
+
+#boton-producto{
+  background: rgba(15, 96, 155, 1);
+  border-radius: 7px;
+  margin-top: 1em;
+  border: none; 
+  color: rgba(247, 201, 72, 1);
+  width: 15em;
+  margin-left: 0.5em;
+  font-weight: bolder;
+  margin-bottom: 1em;
+}
+
+.cardDay, .cardPerecederos{
+ /* border: ;  */
+ border-radius: 7px;
+ box-shadow: 2px 8px 8px rgb(0 0 0 / 59%);
+ background: rgba(255, 255, 255, 0.864);
+}
+
+/* .cardPerecederos{
+  border-radius: 7px;
+  box-shadow: 2px 8px 8px rgb(0 0 0 / 59%);
+  background: rgba(255, 255, 255, 0.864);
+} */
