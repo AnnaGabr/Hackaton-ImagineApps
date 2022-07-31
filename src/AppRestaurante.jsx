@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Restaurante } from './components/Restaurante';
 import { Header } from "./components/Header";
 
-export function App() {
+export function AppRestaurante() {
     const [alimentos, setAlimentos] = useState([]);
 
     return(
