@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'roboto';
+  background-image: url('./images/fondo.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  background-color: #8D2B0B;
+  height: 116px;
+  justify-content: space-between;
+}
+
+nav .btnPerfil {
+  margin-left: 40px;
+  background: rgba(0,0,0,0);
+  border: none;
+  cursor: pointer;
+}
+
+nav .btnMenu {
+  margin-right: 41px;
+  background: rgba(0,0,0,0);
+  border: none;
+  cursor: pointer;
+}
