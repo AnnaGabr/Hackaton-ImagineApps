@@ -63,8 +63,8 @@ export function Auth() {
 
         <select name='' id='' onChange={(ev) => setRol(ev.target.value)}>
           <option value=''>¿Cúal es tu rol?</option>
-          <option value='admin'>Administrador</option>
-          <option value='user'>Usuario</option>
+          <option value='admin'>Fundacion</option>
+          <option value='user'>Establecimiento</option>
         </select>
         <input
           type='submit'

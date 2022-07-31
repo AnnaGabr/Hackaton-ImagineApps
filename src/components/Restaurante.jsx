@@ -4,7 +4,7 @@ import { AlimentosPerecederos } from './AlimentosPerecederos';
 
 export const Restaurante = ({ alimentos }) => {
   return (
-    <div className='notifContainer' id='principalForm'>
+    <div id='principalForm'>
       <div className='cardDay'>
         <form className='alimentos-dia'>
           <h4>ALIMENTOS DEL DÍA</h4> <br></br>

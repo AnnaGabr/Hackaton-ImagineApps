@@ -3,6 +3,7 @@ import firebaseAppData from './firebase/firebase-config';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { Auth } from './components/Auth';
 import AppFundaciones from './AppFundaciones';
+import AppRestaurante2 from './AppRestaurante2';
 
 const auth = getAuth(firebaseAppData);
 
