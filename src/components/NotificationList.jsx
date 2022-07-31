@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NotificationType } from "./NotificationType";
+import { Notification } from "./Notification";
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from "../firebase_alimentos/init-firebase";
 
@@ -108,19 +109,18 @@ export const NotificationList = ({ genType }) => {
                     className="btnProductType"
                     onClick={ clickPerishable }
                     >ALIMENTOS PERECEDEROS</button>
-                </div>
-                { genType ?
+                </div>{
+                    /*{ genType ?
                     <NotificationType productArray={ products_day } type={ 1 } onClick={ reserveProduct } genType={ genType } />
                     :
-                    <NotificationType productArray={ products_perishable } type={ 0 } onClick={ buyProduct } genType={ genType } />
-
-                    /*{ products_day.map((product) => (
+                    <NotificationType productArray={ products_perishable } type={ 0 } onClick={ buyProduct } genType={ genType } />*/
+                }
+                { products_day.map((product) => (
                         <Notification key={ product.id } product={ product } type={ 1 } onClick={ reserveProduct } />
                     )) } :
                     { products_perishable.map((product) => (
                         <Notification key={ product.id } product={ product } type={ 0 } onClick={ buyProduct } />
-                    )) }*/
-                }
+                    )) }
             </div>
         </div>
     )
