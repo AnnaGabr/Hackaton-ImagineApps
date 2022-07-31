@@ -5,7 +5,6 @@ import { AlimentosPerecederos } from './AlimentosPerecederos'
 
 export const Restaurante = ({ alimentos }) => {
 
-
   return (
     <div >
       <form className='alimentos-dia'>
